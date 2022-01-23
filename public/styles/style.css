@@ -1,0 +1,130 @@
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* index */
+#search {
+  background-image: url('/images/spotify-background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 5rem 15rem;
+}
+
+#search form input {
+  background-color: white;
+  border: dimgrey;
+  color: darkslategrey;
+  padding: 1rem;
+  width: 25vw;
+}
+
+#search form button {
+  background-color: salmon;
+  border: none;
+  font-weight: bold;
+  color: white;
+  padding: 1rem 2.2rem;
+}
+
+#search form button:hover {
+  background-color: firebrick;
+}
+
+
+
+/* search results */
+/* list of albums for 1 artist */
+#cards-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+#cards-list .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cards-list .card img {
+  height: 32rem;;
+  width: 32rem;
+  object-fit: cover;
+}
+
+#cards-list .card a {
+  background-color: salmon;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 2.2rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+#cards-list .card a:hover {
+  background-color: firebrick;
+}
+
+#cards-list .card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: darkslategrey;
+  color: white;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+
+
+/* list of tracks for 1 album */
+
+#tracks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+#tracks #head, #tracks .track {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkslategrey;
+  color: white;
+  width: 80vw;
+}
+
+
